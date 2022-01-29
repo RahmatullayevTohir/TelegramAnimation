@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="#C3C3C3"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="7dp"
+            app:dotsSpacing="2dp"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="#505050"
+            app:progressMode="true"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="Start Messaging"
+            android:textColor="#2570E1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
